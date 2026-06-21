@@ -1,0 +1,50 @@
+
+import pygame
+pygame.init()
+win = pygame.display.set_mode([600, 600])
+r = 0
+g = 0
+b = 0
+left = 0
+#### ---- DRAW GRADIENT ---- ####
+while left < 300:
+    pygame.draw.circle(win, (r, g, b), (300,300), left, 1)
+    g += 1
+    b += 1
+    left += 2
+    pygame.time.wait(30)
+    pygame.display.flip()
+
+left = 600
+while left > 0:
+    pygame.draw.circle(win, (255, 255, 255), [550,300], left, 6)
+    left -= 5
+    pygame.time.wait(40)
+    pygame.display.flip()
+
+window = pygame.display.set_mode([2540, 2540])
+
+plus = 1271
+minus = 1269
+top_left = (minus,minus)
+top_right = (plus,minus)
+bottom_right = (plus,plus)
+bottom_left = (minus,plus)
+r = 0
+g = 0
+b = 0
+left = 0
+
+while left < 1270:
+    top_left = (minus,minus)
+    top_right = (plus,minus)
+    bottom_right = (plus,plus)
+    bottom_left = (minus,plus)
+    pygame.draw.polygon(window, (r, g, b), [top_left, top_right, bottom_right, bottom_left], 5)
+    b += 1
+    minus -= 5
+    plus += 5
+    left += 5
+    pygame.time.wait(30)
+    pygame.display.flip()
+input()
