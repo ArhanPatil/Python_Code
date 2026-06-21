@@ -1,0 +1,218 @@
+"""
+TITLE: Hangman
+"""
+import random
+
+list_sports = ["archery", "basketball", "badminton", "baseball", "boxing",
+               "cricket", "cycling", "chess", "diving", "dodgeball", "skydiving", "paragliding",
+               "gymnastics", "softball", "rugby", "hockey", "football", "surfing",
+               "wrestling", "golf", "weightlifting", "tennis", "karate", ]
+
+
+HANGMAN = (
+"""
+-----
+|   |
+|
+|
+|
+|
+|
+|
+|
+--------
+""",
+"""
+-----
+|   |
+|   0
+|
+|
+|
+|
+|
+|
+--------
+""",
+"""
+-----
+|   |
+|   0
+|  -+-
+|
+|
+|
+|
+|
+--------
+""",
+"""
+-----
+|   |
+|   0
+| /-+-
+|
+|
+|
+|
+|
+--------
+""",
+"""
+-----
+|   |
+|   0
+| /-+-\ 
+|
+|
+|
+|
+|
+--------
+""",
+"""
+-----
+|   |
+|   0
+| /-+-\ 
+|   | 
+|
+|
+|
+|
+--------
+""",
+"""
+-----
+|   |
+|   0
+| /-+-\ 
+|   | 
+|   | 
+|
+|
+|
+--------
+""",
+"""
+-----
+|   |
+|   0
+| /-+-\ 
+|   | 
+|   | 
+|  |
+|
+|
+--------
+""",
+"""
+-----
+|   |
+|   0
+| /-+-\ 
+|   | 
+|   | 
+|  | 
+|  | 
+|
+--------
+""",
+"""
+-----
+|   |
+|   0
+| /-+-\ 
+|   | 
+|   | 
+|  | | 
+|  | 
+|
+--------
+""",
+"""
+-----
+|   |
+|   0
+| /-+-\ 
+|   | 
+|   | 
+|  | | 
+|  | | 
+|
+--------
+""")
+
+print("""Welcome to Hangman! A word will be chosen at random and
+you must try to guess the word correctly letter by letter
+before you run out of attempts. Good luck!
+
+The topic is sports!""")
+print()
+print()
+attempts = len(HANGMAN) - 1
+print()
+
+rand = random.choice(list_sports)
+answer = []
+guessed_letters = []
+word_guessed = None
+out_guess = []
+
+for i in rand:
+    answer += i
+    out_guess.append("-")
+
+while attempts != 0 and "-" in out_guess:
+    print()
+    print("You have " + str(attempts) + " attempts left. ")
+    print()
+    joined_word = "".join(out_guess)
+    print(joined_word)
+    print()
+    
+    try:
+        guess = str(input("Enter your guess: "))
+        print()
+    except:
+        print("That is invalid. Please try again. ")
+        pass
+    
+    
+    if not guess.isalpha(): 
+        print("That is not a letter. Please try again.")
+        continue
+
+    elif len(guess) > 1:
+        print("That is more than one letter. Please try again.")
+        continue
+        
+    elif guess in guessed_letters: # check it letter hasn't been guessed already
+        print("You have already guessed that letter. Please try again.")
+        continue
+        
+    else:
+        pass
+    print()
+    guessed_letters.append(guess)
+    
+    for letter in range(len(rand)):
+        if guess == rand[letter]:
+            out_guess[letter] = guess
+            
+    if guess not in rand:
+        attempts -= 1
+    print(HANGMAN[(len(HANGMAN) - 1) - attempts])
+                
+if "-" not in out_guess:
+    print("Congatulations, you got the word! " + str(rand))
+    print("-----------------------------------------------")
+    print("🎉🎉🥳🥳~|~!!! You win the game !!!~|~🥳🥳🎉🎉")
+    print("-----------------------------------------------")
+if "-" in out_guess:
+    print("Congatulations, you did not get the word! ")
+    print("It was, " + str(rand))
+    
+
+# Turn in your Coding Exercise.
+
