@@ -1,0 +1,54 @@
+"""
+Timer without pygame
+"""
+
+import time
+
+def mytimer():
+
+    while(True):
+        try:
+            t = int(input("Enter how long you want your timer in seconds: "))
+            print()
+            break
+        except:
+            print()
+            print("Error: Invalid Integer. Please enter an integer only.🤬")
+            print()
+    
+     
+    
+    while t != 0:
+        m = int(t / 60)
+        s = t % 60
+        
+        if m < 10:
+            m = "0" + str(m)
+        if s < 10:
+            s = "0" + str(s)
+    
+        time.sleep(1)
+        t -= 1
+        print(str(m) + ":" + str(s))
+        
+mytimer()
+
+
+while(True):
+    try:
+        print()
+        q = str(input("Would you like to go again? y/n :"))
+        print()
+        if q != "y" and q != "n":
+            print("That is not a valid answer. Please type y/n only.")
+    except:
+        print()
+        print("Error: invalid option. Please only enter y/n. ")
+        print()
+        pass
+    
+    if q == "y":
+        mytimer()
+    elif q == "n":
+        print("Thank you for playing! ")
+        break
