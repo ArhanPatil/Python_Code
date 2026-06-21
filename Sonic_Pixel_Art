@@ -1,0 +1,869 @@
+"""
+Sonic
+
+Description:
+"""
+
+import pygame
+import sys
+pygame.init()
+px = 10                 #PX SIZE
+w, h = 23 * px, 28 * px
+window = pygame.display.set_mode([w, h])
+black = (0,0,0)         #BLACK
+blue = (9,107,181)      #BLUE
+badge = (251,193,145)   #BADGE
+red = (227,9,10)        #RED
+speed = 5               # how fast
+while True:
+    window.fill((255,255,255))
+    x, y = 30, 20
+    for f in range(12):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, black, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    x, y = 180, 20
+    for f in range(2):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, black, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    rect = pygame.Rect(20,30,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    pygame.display.flip()
+    
+    x, y = 30, 30
+    for f in range(12):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, blue, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    for f in range(3):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, black, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, blue, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    x, y = 30, 40
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    for f in range(3):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, blue, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+        
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, badge, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    for f in range(10):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, blue, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    
+    x, y = 40, 50
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    for f in range(2):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, blue, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+        
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    for f in range(2):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, badge, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    for f in range(9):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, blue, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    
+    
+    x, y = 50, 60
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, blue, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+        
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, badge, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    for f in range(11):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, blue, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    
+    
+    x, y = 40, 70
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    for f in range(8):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, blue, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+        
+    x += 3 * px
+    
+    for f in range(4):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, blue, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    
+    
+    x, y = 30, 80
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    for f in range(8):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, blue, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+        
+    x += 5 * px
+    
+    for f in range(3):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, blue, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    
+    
+    x, y = 20, 90
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    for f in range(9):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, blue, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+        
+    x += 4 * px
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, blue, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    x += px
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    
+    
+    x, y = 10, 100
+    for f in range(6):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, black, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    for f in range(5):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, blue, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+        
+    x += 4 * px
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, blue, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    x += px
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    
+    
+    x, y = 50, 110
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    for f in range(7):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, blue, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+        
+    x += 3 * px
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    x += px
+    
+    for f in range(3):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, black, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    
+    
+    x, y = 40, 120
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    for f in range(5):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, blue, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+        
+    for f in range(3):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, badge, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    x += px * 4
+    
+    for f in range(2):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, badge, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    
+    
+    x, y = 30, 130
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    for f in range(6):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, blue, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+        
+    for f in range(9):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, badge, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    
+    
+    x, y = 20, 140
+    
+    for f in range(9):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, black, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    for f in range(7):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, badge, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    
+    
+    x, y = 90, 150
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, badge, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    for f in range(8):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, black, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    
+    
+    x, y = 80, 160
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, badge, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    for f in range(2):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, black, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, blue, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    for f in range(3):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, badge, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+        
+    for f in range(4):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, black, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    
+    
+    x, y = 70, 170
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, badge, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    x += 2 * px
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    for f in range(3):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, badge, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+        
+    for f in range(2):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, black, rect)
+        pygame.time.wait(speed)
+        x += 3 * px
+        pygame.display.flip()
+    
+    
+    
+    
+    x, y = 70, 180
+    
+    for f in range(2):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, black, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    x += 4 * px
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    for f in range(2):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, badge, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+        
+    for f in range(2):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, black, rect)
+        pygame.time.wait(speed)
+        x += 3 * px
+        pygame.display.flip()
+    
+    
+    
+    x, y = 80, 190
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    x += 40
+    
+    for f in range(2):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, black, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, badge, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+        
+    for f in range(2):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, black, rect)
+        pygame.time.wait(speed)
+        x += 20
+        pygame.display.flip()
+        
+    
+    
+    x, y = 90, 200
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    x += 20
+    
+    for f in range(2):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, black, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, blue, rect)
+    pygame.time.wait(speed)
+    x += 10
+    pygame.display.flip()
+        
+    for f in range(4):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, black, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    
+    
+    x, y = 100, 210
+    for f in range(2):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, black, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, blue, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    for f in range(3):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, black, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+        
+    
+    
+    x, y = 100, 220
+    for f in range(2):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, black, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, blue, rect)
+    pygame.time.wait(speed)
+    x += 10
+    pygame.display.flip()
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += 10
+    pygame.display.flip()
+    
+    for f in range(2):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, red, rect)
+        pygame.time.wait(speed)
+        x += 10
+        pygame.display.flip()
+    
+    for f in range(2):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, black, rect)
+        pygame.time.wait(speed)
+        x += 10
+        pygame.display.flip()
+    
+    
+    
+    
+    x, y = 90, 230
+    for f in range(2):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, black, rect)
+        pygame.time.wait(speed)
+        x += 10
+        pygame.display.flip()
+    
+    for f in range(2):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, red, rect)
+        pygame.time.wait(speed)
+        x += 10
+        pygame.display.flip()
+    
+    for f in range(2):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, black, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    for f in range(2):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, red, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    x += px
+    
+    for f in range(2):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, black, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    
+    
+    
+    x, y = 90, 240
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    for f in range(3):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, red, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    x += px
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, red, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    for f in range(2):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, black, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    for f in range(3):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, red, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    
+    
+    x, y = 90, 250
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    for f in range(2):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, red, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    x += px
+    
+    for f in range(4):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, red, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    for f in range(3):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, red, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+    
+    rect = pygame.Rect(x,y,px,px)
+    pygame.draw.rect(window, black, rect)
+    pygame.time.wait(speed)
+    x += px
+    pygame.display.flip()
+    
+    
+    
+    x, y = 90, 260
+    for f in range(13):
+        rect = pygame.Rect(x,y,px,px)
+        pygame.draw.rect(window, black, rect)
+        pygame.time.wait(speed)
+        x += px
+        pygame.display.flip()
+        
+    
+    drawing = True
+    while drawing:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                sys.exit()
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_r:
+                    drawing = False
+                if event.key == pygame.K_q:
+                    sys.exit()
