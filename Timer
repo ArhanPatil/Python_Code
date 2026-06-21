@@ -1,0 +1,87 @@
+"""
+TITLE: Timer!
+"""
+
+import time
+import pygame
+import pygame.freetype
+import sys
+pygame.init()
+game_window = pygame.display.set_mode([1900,1000])
+game_window.fill((0,0,0))
+pygame.display.flip()
+def show_score(text):
+        game_window.fill((0,0,0))
+        GAME_FONT = pygame.freetype.Font("OpenSans-ExtraBold.ttf")
+        
+        GAME_FONT.size = 700
+        
+        GAME_FONT.fgcolor = (137, 207, 240)
+        
+        r = GAME_FONT.get_rect(text)
+        
+        GAME_FONT.render_to(game_window, (950-r.width/2, 500-r.height/2), text)
+        pygame.display.flip()
+def mytimer():
+
+    while(True):
+        try:
+            t = int(input("Enter how long you want your timer in seconds: "))
+            print()
+            if t > 3600:
+                print("That is way too long!")
+                print()
+                continue
+            break
+        except:
+            print()
+            print("Error: Invalid Integer. Please enter an integer only.🤬")
+            print()
+    
+     
+    
+    while t > -1:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                sys.exit()
+        
+        
+        m = int(t / 60)
+        s = t % 60
+        
+        if m < 10:
+            m = "0" + str(m)
+        if s < 10:
+            s = "0" + str(s)
+    
+        time.sleep(1)
+        t -= 1
+        show_score(str(m) + ":" + str(s))
+    pygame.time.wait(int(sound.get_length()*1000))
+    
+print("Welcome to TIMER!")
+print("Welcome to TIMER!"[::-1])
+
+
+mytimer()
+
+
+while(True):
+    try:
+        print()
+        q = str(input("Would you like to go again? y/n :"))
+        print()
+        if q != "y" and q != "n":
+            print("That is not a valid answer. Please type y/n only.")
+        
+    except:
+        print()
+        print("Error: invalid option. Please only enter y/n. ")
+        print()
+        pass
+    
+    if q == "y":
+        mytimer()
+    elif q == "n":
+        print("Thank you for playing! ")
+        break
