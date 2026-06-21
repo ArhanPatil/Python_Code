@@ -1,0 +1,66 @@
+"""
+Rock_Paper_Scissors
+"""
+import random
+c = 0
+a = 0
+i = 0
+
+while i == 0:
+        user_action = input("Enter a choice (rock, paper, scissors): ")
+        options = ["scissors","rock", "paper"]
+        comp_action = random.choice(options)
+        
+        if user_action == "scissors" or user_action == "rock" or user_action == "paper":
+            if user_action == "rock" and comp_action == "paper":
+                print("You lost! ")
+                a -= 1
+                c += 1
+            elif user_action == "rock" and comp_action == "scissors":
+                print("You won! ")
+                a += 1
+                c -= 1
+            elif user_action == "paper" and comp_action == "scissors":
+                print("You lost! ")
+                a -= 1
+                c += 1
+            elif user_action == "paper" and comp_action == "rock":
+                print("You won! ")
+                a += 1
+                c -= 1
+            elif user_action == "scissors" and comp_action == "paper":
+                print("You won! ")
+                a += 1
+                c -= 1
+            elif user_action == "scissors" and comp_action == "rock":
+                print("You lost! ")
+                a -= 1
+                c += 1
+            elif user_action == comp_action:
+                print("It's a tie! ")
+            
+            print("I played " + comp_action)
+            print("You played " + user_action)
+            print("Your score is: " + str(a) )
+            print("Computer score is: " + str(c))
+            print()
+        else:
+            print("Enter a choice (rock, paper, scissors) only!!!")
+        
+        if int(a) == 3:
+            print("-----------------------------------------------")
+            print("🎉🎉🥳🥳~|~!!! You win the game !!!~|~🥳🥳🎉🎉")
+            print("-----------------------------------------------")
+            break
+        if int(c) == 3:
+            print("----------------------")
+            print("~|~!!! You lost !!!~|~")
+            print("----------------------")
+            break
+        
+        try:
+            i = int(input("Type 1 to quit or 0 to continue: "))
+            print()
+        except:
+            i = int(input("Type 1 to quit or 0 to continue: "))
+            print()
